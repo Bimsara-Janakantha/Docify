@@ -138,6 +138,14 @@
   .shadow-soft {
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 4px 16px -4px rgb(0 0 0 / 0.06);
   }
+  
+  @keyframes progress {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  .animate-progress {
+    animation: progress 1.5s infinite linear;
+  }
 }
 
 /* ─── docx-preview overrides ─── */
