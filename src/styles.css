@@ -1,5 +1,4 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -139,4 +138,26 @@
   .shadow-soft {
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.04), 0 4px 16px -4px rgb(0 0 0 / 0.06);
   }
+}
+
+/* ─── docx-preview overrides ─── */
+.docx-preview-container {
+  padding: 1rem;
+}
+
+.docx-preview-container .docx-preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100%;
+}
+
+.docx-preview-container .docx-preview-wrapper > section.docx {
+  background: white !important;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 3px rgb(0 0 0 / 0.1),
+    0 4px 16px rgb(0 0 0 / 0.06);
+  overflow: hidden;
 }
