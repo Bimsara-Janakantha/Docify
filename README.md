@@ -1,6 +1,8 @@
 # Docify
 
-![Docify Preview](https://via.placeholder.com/1200x600?text=Docify+-+Client-Side+Document+Generation)
+<p align="center">
+  <img src="https://via.placeholder.com/1200x600?text=Docify+-+Client-Side+Document+Generation" alt="Docify Preview" />
+</p>
 
 A web application that allows users to generate professional Word documents (`.docx` or `.doc`) directly from JavaScript (`.js`) configuration files, entirely within the client-side environment. 
 
