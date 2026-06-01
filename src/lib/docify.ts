@@ -10,7 +10,8 @@ import {
   Header,
   BorderStyle,
 } from "docx";
-import { saveAs } from "file-saver";
+import FileSaver from "file-saver";
+const { saveAs } = FileSaver;
 
 export interface FileStats {
   name: string;
