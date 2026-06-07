@@ -3,20 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <title>Docify — JavaScript to Word, instantly</title>
+
+    <!-- ─── Primary Meta ─────────────────────────────────────────── -->
+    <title>Docify — Convert JavaScript to Word Document (.docx) Instantly</title>
     <meta
       name="description"
-      content="Docify converts your JavaScript source files into beautifully formatted Microsoft Word documents — entirely in your browser."
+      content="Docify converts JavaScript (.js) source files into beautifully formatted Microsoft Word documents (.docx) — entirely in your browser. No upload, no server, 100% private."
     />
     <meta name="author" content="Bimsara Janakantha" />
-    <meta property="og:title" content="Docify — JavaScript to Word, instantly" />
+    <meta
+      name="keywords"
+      content="javascript to word, js to docx, convert js to word document, javascript to doc, code to word, js file to docx, javascript documentation generator, source code to word, code formatter word, docify"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://docify.bitnexlabs.dev/" />
+
+    <!-- ─── Open Graph / Facebook ─────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://docify.bitnexlabs.dev/" />
+    <meta property="og:site_name" content="Docify" />
+    <meta
+      property="og:title"
+      content="Docify — Convert JavaScript to Word Document (.docx) Instantly"
+    />
     <meta
       property="og:description"
-      content="Drop a .js file, preview the code, and download a polished .docx document. No server, no upload."
+      content="Drop a .js file, preview your code, and download a polished .docx Word document in seconds. No server, no upload, 100% private and free."
     />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://docify.bitnexlabs.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Docify — JavaScript to Word Document Converter" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ─── Twitter Card ──────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@docifyapp" />
+    <meta name="twitter:creator" content="@bimsarajanakantha" />
+    <meta
+      name="twitter:title"
+      content="Docify — Convert JavaScript to Word Document (.docx) Instantly"
+    />
+    <meta
+      name="twitter:description"
+      content="Drop a .js file, preview your code, and download a polished .docx Word document in seconds. Free, private, browser-only."
+    />
+    <meta name="twitter:image" content="https://docify.bitnexlabs.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="Docify — JavaScript to Word Document Converter" />
+
+    <!-- ─── Favicon / App Icons ────────────────────────────────────── -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- ─── Structured Data (JSON-LD) ─────────────────────────────── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://docify.bitnexlabs.dev/#app",
+            "name": "Docify",
+            "url": "https://docify.bitnexlabs.dev/",
+            "description": "Docify converts JavaScript (.js) source files into beautifully formatted Microsoft Word documents (.docx) entirely in your browser — no server, no upload.",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Any",
+            "browserRequirements": "Requires JavaScript",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Convert JavaScript (.js) files to Word (.docx) documents",
+              "Syntax-highlighted code preview",
+              "Runs entirely in the browser — no file upload",
+              "Instant download",
+              "Free and private"
+            ],
+            "screenshot": "https://docify.bitnexlabs.dev/og-image.png",
+            "creator": {
+              "@type": "Person",
+              "name": "Bimsara Janakantha"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://docify.bitnexlabs.dev/#website",
+            "url": "https://docify.bitnexlabs.dev/",
+            "name": "Docify",
+            "description": "Free browser-based tool to convert JavaScript source files to Word documents.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://docify.bitnexlabs.dev/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://docify.bitnexlabs.dev/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I convert a JavaScript file to a Word document?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply drop your .js file onto Docify, preview the code, and click Download. Your Word (.docx) document is generated instantly in your browser."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Docify free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Docify is completely free. No account required, no file size limits, and no ads."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are my JavaScript files uploaded to a server?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Docify runs entirely in your browser. Your files never leave your device — conversion happens locally for complete privacy."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What file formats does Docify support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Docify converts JavaScript (.js) files to Microsoft Word documents (.docx and .doc)."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <!-- ─── Preconnect / Performance ──────────────────────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
